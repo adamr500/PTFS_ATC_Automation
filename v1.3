@@ -1,0 +1,63 @@
+mode = input("Arrival or Departure: ").lower()
+
+if mode == "departure" or mode == "d":
+
+#departure
+
+    gate = input("Enter Gate Nubmer: ").lower()
+    runway = input("Enter Runway: ").lower()
+
+    if gate == "1" or gate == "2" or gate == "3" or gate == "4" or gate == "5" or gate == "6" or gate == "7" or gate == "8" or gate == "9" or gate == "10" and runway == "36l" or "36r":
+        print("A,")
+
+    if gate == "1" or gate == "2" or gate == "3":
+        print("A3,")
+
+    if gate == "4":
+        print("A4,")
+
+    if gate == "5":
+        print("A5,")
+
+    if gate == "6" or gate == "7" or gate == "8" or gate == "9" or gate == "10":
+        print("A6,")
+
+    if gate == "1" or gate == "2" or gate == "3" or gate == "4" or gate == "5" or gate == "6" or gate == "7" or gate == "8" or gate == "9" or gate == "10" and runway == "36l" or "36r":
+        print("B,")
+
+    if runway == "36l":
+        print("B1,")
+        print("36L")
+
+    if runway == ("36r"):
+        print("B3,")
+        print("36R")
+
+#arrival
+
+elif mode == "arrival" or mode == "a":
+
+    runway = input("Enter Runway: ").lower()
+    gate = input("Enter Gate: ").lower()
+
+    if runway == "36r":
+        print("E2,")
+
+    if runway == "36r" or runway == "36l":
+        print("B9,")
+        print("B,")
+
+    if gate == "6" or gate == "7" or gate == "8" or gate == "9" or gate == "10":
+        print("A6,")
+
+    if gate == "1" or gate == "2" or gate == "3" or gate == "4" or gate == "5" or gate == "6" or gate == "7" or gate == "8" or gate == "9" or gate == "10":
+        print("A,")
+
+    if gate == "4":
+        print("A5,")
+
+    if gate == "3" or gate == "2" or gate == "1":
+        print("A4,")
+
+    if mode == "arrival" or mode == "a":
+        print(gate)
